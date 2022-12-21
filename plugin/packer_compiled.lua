@@ -74,22 +74,16 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["aoc.nvim"] = {
-    config = { "\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\16fetch_input\baoc\frequireH\1\0\6\0\6\0\t6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0003\4\5\0004\5\0\0B\0\5\1K\0\1\0\0\15<leader>dq\6n\bset\vkeymap\bvim\0" },
-    loaded = true,
-    path = "/home/md/.local/share/nvim/site/pack/packer/start/aoc.nvim",
-    url = "/home/md/code/aoc.nvim"
-  },
   ["duck.nvim"] = {
     config = { "\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nhatch\tduck\frequire1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\tcook\tduck\frequiret\1\0\6\0\b\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0003\4\5\0004\5\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\6\0003\4\a\0004\5\0\0B\0\5\1K\0\1\0\0\15<leader>dk\0\15<leader>dd\6n\bset\vkeymap\bvim\0" },
     loaded = true,
     path = "/home/md/.local/share/nvim/site/pack/packer/start/duck.nvim",
     url = "https://github.com/tamton-aquib/duck.nvim"
   },
-  ["gruvbox.nvim"] = {
+  ["gruvbox-material"] = {
     loaded = true,
-    path = "/home/md/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
+    path = "/home/md/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -105,19 +99,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/md/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/home/md/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: aoc.nvim
-time([[Config for aoc.nvim]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\16fetch_input\baoc\frequireH\1\0\6\0\6\0\t6\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0003\4\5\0004\5\0\0B\0\5\1K\0\1\0\0\15<leader>dq\6n\bset\vkeymap\bvim\0", "config", "aoc.nvim")
-time([[Config for aoc.nvim]], false)
 -- Config for: duck.nvim
 time([[Config for duck.nvim]], true)
 try_loadstring("\27LJ\2\n2\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nhatch\tduck\frequire1\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\tcook\tduck\frequiret\1\0\6\0\b\0\0176\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\4\0003\4\5\0004\5\0\0B\0\5\0016\0\0\0009\0\1\0009\0\2\0'\2\3\0'\3\6\0003\4\a\0004\5\0\0B\0\5\1K\0\1\0\0\15<leader>dk\0\15<leader>dd\6n\bset\vkeymap\bvim\0", "config", "duck.nvim")
