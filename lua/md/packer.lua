@@ -23,7 +23,7 @@ return require('packer').startup(function()
     -- use 'ellisonleao/gruvbox.nvim'
     use 'sainnhe/gruvbox-material'
     use 'lukas-reineke/indent-blankline.nvim'
-    use 'nvim-treesitter/nvim-treesitter'
+    -- use 'nvim-treesitter/nvim-treesitter'
     use { 'thibthib18/ros-nvim', config=function()
         require 'ros-nvim'.setup({
             catkin_ws_path = "~/catkin_ws",
@@ -78,6 +78,7 @@ return require('packer').startup(function()
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+    use 'neovim/nvim-lspconfig'
     if packer_bootstrap then
         require('packer').sync()
     end
