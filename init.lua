@@ -1,6 +1,22 @@
 require("md")
 require("md.packer")
 
+require("mason").setup()
+require("mason-lspconfig").setup()
+
+local lspconfig = require('lspconfig')
+vim.cmd [[let g:coq_settings = { 'auto_start': 'shut-up' }]]
+local coq = require('coq')  
+lspconfig.pyright.setup {
+    coq.lsp_ensure_capabilities()
+}
+lspconfig.rust_analyzer.setup {
+    coq.lsp_ensure_capabilities()
+}
+lspconfig.clangd.setup {
+    coq.lsp_ensure_capabilities()
+}
+
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
