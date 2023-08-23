@@ -1,9 +1,6 @@
 require("md")
 require("md.packer")
 
-require("mason").setup()
-require("mason-lspconfig").setup()
-
 local lspconfig = require('lspconfig')
 vim.cmd [[let g:coq_settings = { 'auto_start': 'shut-up' }]]
 local coq = require('coq')  

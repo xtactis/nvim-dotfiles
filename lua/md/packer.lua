@@ -23,26 +23,28 @@ return require('packer').startup(function()
     use 'sainnhe/gruvbox-material'
     use 'lukas-reineke/indent-blankline.nvim'
     use 'nvim-treesitter/nvim-treesitter'
-
-    use 'ms-jpq/coq_nvim'
-    
-    use 'ziglang/zig.vim'
-    use "williamboman/mason.nvim"
-    use "williamboman/mason-lspconfig.nvim"
-    use 'neovim/nvim-lspconfig'
-
-    use {
-        'tamton-aquib/duck.nvim',
-        config = function()
-            vim.keymap.set('n', '<leader>dd', function() require("duck").hatch() end, {})
-            vim.keymap.set('n', '<leader>dk', function() require("duck").cook() end, {})
-        end
-    }
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+
+    use 'ms-jpq/coq_nvim'
+    
+    use 'ziglang/zig.vim'
+    use 'neovim/nvim-lspconfig'
+    use 'nanotee/nvim-lsp-basics'
+
+    use 'lewis6991/gitsigns.nvim'
+
+    use 'elihunter173/dirbuf.nvim'
+    
+    use 'sakhnik/nvim-gdb'
+
+    -- memes
+    use 'rktjmp/shenzhen-solitaire.nvim'
+    use 'seandewar/nvimesweeper'
+
     if packer_bootstrap then
         require('packer').sync()
     end
