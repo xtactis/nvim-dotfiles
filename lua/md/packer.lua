@@ -41,6 +41,10 @@ return require('packer').startup(function()
     
     use 'sakhnik/nvim-gdb'
 
+    use 'stevearc/dressing.nvim'
+    use 'rcarriga/nvim-notify'
+    use 'krady21/compiler-explorer.nvim'
+
     -- memes
     use 'rktjmp/shenzhen-solitaire.nvim'
     use 'seandewar/nvimesweeper'
